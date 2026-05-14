@@ -72,18 +72,16 @@
             border-radius: 2px;
         }
 
-        #contact-area {
-            font-size: 2rem;
-            padding-left: 1rem;
-        }
-
-        /* WhatsApp Button Enhancement */
         .fixed {
             box-shadow: 0 10px 30px -10px rgba(37, 211, 102, 0.5);
         }
 
         .fixed:hover {
             box-shadow: 0 15px 40px -10px rgba(37, 211, 102, 0.6);
+        }
+
+        .hidden-content {
+            display: none;
         }
     </style>
 </head>
@@ -95,7 +93,6 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20 md:h-24">
 
-                <!-- Logo (Clickable to Home) -->
                 <a href="home.html" class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
                     <img src="./img/logo pic (2).jpg" alt="Physio Prisma Logo"
                         class="h-10 w-auto sm:h-12 md:h-14 rounded-full object-cover border-2 border-purple-100">
@@ -109,39 +106,13 @@
                     </div>
                 </a>
 
-                <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center gap-6 xl:gap-8 font-semibold">
-                    <a href="about.html" class="nav-link text-gray-700 hover:text-[var(--purple)] transition">About
-                        Us</a>
-
-                    <!-- Our Clinic Dropdown -->
-                    <!-- <div class="group relative">
-                        <a href="clinic.html" class="nav-link text-gray-700 hover:text-[var(--purple)] transition flex items-center gap-1">
-                            Our Clinic
-                            <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-200 group-hover:rotate-180"></i>
-                        </a>
-                        <div class="absolute left-0 mt-4 w-64 bg-white shadow-2xl rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
-                            <a href="https://wa.link/zxbynh" 
-   target="_blank" class="block px-6 py-3 text-gray-700 hover:bg-[var(--light-purple)] hover:text-[var(--purple)] transition">Branch 1 : E-6 ,Rose Garden , Block-13 ,Gulistan-e-Johar, Karachi.</a>
-                        <a href="https://wa.link/zxbynh" 
-   target="_blank" class="block px-6 py-3 text-gray-700 hover:bg-[var(--light-purple)] hover:text-[var(--purple)] transition">Branch 2 : C-39 Johar , Block-1A ,Gulistan-e-Johar, Karachi.</a>
-                        </div>
-                    </div> -->
-
-                    <a href="gallery.html"
-                        class="nav-link text-gray-700 hover:text-[var(--purple)] transition">Gallery</a>
-                    <a href="contact.html"
-                        class="nav-link text-gray-700 hover:text-[var(--purple)] transition">Contact</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-[var(--purple)] transition">About Us</a>
+                    <a href="gallery.html" class="nav-link text-gray-700 hover:text-[var(--purple)] transition">Gallery</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-[var(--purple)] transition">Contact</a>
                     <a href="shop.html" class="nav-link text-gray-700 hover:text-[var(--purple)] transition">Shop</a>
                 </div>
 
-                <!-- Shop Now Button -->
-                <!-- <a href="shop.html" 
-                   class="hidden lg:flex items-center gap-2 bg-gradient-to-r from-[var(--purple)] to-[var(--blue)] text-white px-7 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap">
-                    Shop Now
-                </a> -->
-
-                <!-- Mobile Hamburger -->
                 <button id="mobile-menu-btn"
                     class="lg:hidden text-[var(--purple)] text-3xl focus:outline-none p-2 rounded-full hover:bg-gray-100 transition">
                     <i class="fa-solid fa-bars"></i>
@@ -149,42 +120,13 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
         <div id="mobile-menu"
             class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg w-full absolute left-0 top-full z-40">
             <div class="px-5 py-6 space-y-3 max-h-[80vh] overflow-y-auto">
-                <a href="about.html"
-                    class="block px-4 py-3 text-base font-semibold text-gray-800 hover:bg-[var(--light-purple)] rounded-xl">About
-                    Us</a>
-
-                <!-- Our Clinic Mobile Dropdown -->
-                <!-- <div class="w-full">
-                    <button id="mobile-clinic-btn" 
-                            class="w-full flex justify-between items-center px-4 py-3 text-base font-semibold text-gray-800 hover:bg-[var(--light-purple)] rounded-xl">
-                        Our Clinic
-                        <i class="fa-solid fa-chevron-down text-sm transition-transform duration-200" id="mobile-chevron"></i>
-                    </button>
-                    <div id="mobile-clinic-dropdown" class="hidden pl-8 mt-2 space-y-2 border-l-2 border-purple-200">
-                        <a href="clinic.html" 
-    class="block py-3 text-gray-600 hover:text-[var(--purple)]">Clinic Services</a>
-                    <a href="https://wa.link/zxbynh" 
-   target="_blank" class="block py-3 text-gray-600 hover:text-[var(--purple)]">Branch 1 : E-6 ,Rose Garden , Block-13 ,Gulistan-e-Johar, Karachi.</a>
-                    <a href="https://wa.link/zxbynh" 
-   target="_blank" class="block py-3 text-gray-600 hover:text-[var(--purple)]">Branch 2 : C-39 Johar , Block-1A ,Gulistan-e-Johar, Karachi.</a>
-                    </div>
-                </div> -->
-
-                <a href="gallery.html"
-                    class="block px-4 py-3 text-base font-semibold text-gray-800 hover:bg-[var(--light-purple)] rounded-xl">Gallery</a>
-                <a href="contact.html"
-                    class="block px-4 py-3 text-base font-semibold text-[var(--purple)] hover:bg-[var(--light-purple)] rounded-xl">Contact</a>
-                <a href="shop.html"
-                    class="block px-4 py-3 text-base font-semibold text-gray-800 hover:bg-[var(--light-purple)] rounded-xl">Shop</a>
-
-                <!-- <a href="shop.html" 
-                   class="block mt-6 bg-gradient-to-r from-[var(--purple)] to-[var(--blue)] text-white text-center py-4 rounded-2xl font-bold shadow-lg">
-                    Shop Now
-                </a> -->
+                <a href="about.html" class="block px-4 py-3 text-base font-semibold text-gray-800 hover:bg-[var(--light-purple)] rounded-xl">About Us</a>
+                <a href="gallery.html" class="block px-4 py-3 text-base font-semibold text-gray-800 hover:bg-[var(--light-purple)] rounded-xl">Gallery</a>
+                <a href="contact.html" class="block px-4 py-3 text-base font-semibold text-[var(--purple)] hover:bg-[var(--light-purple)] rounded-xl">Contact</a>
+                <a href="shop.html" class="block px-4 py-3 text-base font-semibold text-gray-800 hover:bg-[var(--light-purple)] rounded-xl">Shop</a>
             </div>
         </div>
     </nav>
@@ -193,9 +135,8 @@
     <section class="hero-bg py-10">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-extrabold logo-font text-white mb-6">Healthcare Blogs</h1>
-            <h1 class="text-4xl font-extrabold logo-font text-white mb-6">Evidence Based
-                Articles For Patients & Clinicials</h1>
-            <h1 class="text-2xl  font-extrabold logo-font text-black mb-6">A Project of Prisma Healthcare</h1>
+            <h1 class="text-4xl font-extrabold logo-font text-white mb-6">Evidence Based Articles For Patients & Clinicians</h1>
+            <h1 class="text-2xl font-extrabold logo-font text-black mb-6">A Project of Prisma Healthcare</h1>
             <p class="text-xl font-medium text-white max-w-4xl mx-auto">The Prisma Healthcare Blog is your trusted
                 source for evidence-based health information, clinical insights, and rehabilitation guidance. Written
                 and reviewed by our clinical team, our articles bridge the gap between complex medical knowledge and
@@ -209,186 +150,297 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                <!-- Blog 1 -->
+                <!-- Blog 1 - Heat Therapy for Menstrual Cramps -->
                 <div class="blog-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200">
                     <img src="https://img.freepik.com/free-photo/physiotherapist-doing-healing-treatment-womans-back-back-pain-patient-treatment-medical-doctor-massage-therapistoffice-syndrome_657921-323.jpg?semt=ais_hybrid&w=740&q=80"
-                        alt="Back Pain Relief" class="w-full h-56 object-cover">
+                        alt="Heat Therapy" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">How to Relieve Chronic Back Pain
-                            Without Surgery</h3>
-                        <p class="text-gray-600 mb-4">Discover non-invasive techniques including manual therapy, dry
-                            needling, cupping and targeted exercises that thousands of our patients use to eliminate
-                            back pain for good.</p>
-                        <a href="#" class="text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read
-                            More →</a>
+                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">How Heat Therapy Can Help Reduce Menstrual Cramps Naturally</h3>
+                        
+                        <div class="preview-text">
+                            <p class="text-gray-600">For many women, dysmenorrhea, or menstrual cramps, can be a monthly struggle. Heat therapy is one of the best non-invasive treatments for menstrual cramps...</p>
+                        </div>
+                        
+                        <div class="full-content hidden-content">
+                            <p class="text-gray-600 mb-4">For many women, dysmenorrhea, or menstrual cramps, can be a monthly struggle. Finding efficient treatment is crucial because the pain and discomfort might interfere with day-to-day activities. Despite the widespread use of medicines, natural solutions such as heat therapy offer a secure and efficient substitute.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>1. Being aware of menstrual cramps</strong></p>
+                            <p class="text-gray-600 mb-4">When the uterus contracts to release its lining, menstrual cramps happen. Pain is frequently brought on by: Prostaglandins (which cause uterine contractions), decreased blood supply to the muscles of the uterus, and inflammatory response in the pelvis. Lower back pain, lower abdomen pain, nausea, and exhaustion are possible symptoms.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>2. Menstrual cramps treated with heat therapy</strong></p>
+                            <p class="text-gray-600 mb-4">One of the best non-invasive treatments for menstrual cramps is heat therapy. This is how it operates:</p>
+                            <ul class="list-disc pl-5 mb-4 text-gray-600 space-y-1">
+                                <li><strong>Uterine Muscle Relaxation:</strong> Heat helps the uterine muscles relax, which lessens the force of contractions.</li>
+                                <li><strong>Enhances Blood Flow:</strong> Heat improves circulation in the pelvic region by widening blood vessels, which relieves stress and pain.</li>
+                                <li><strong>Relaxes Nerve Messages:</strong> The brain receives fewer pain messages as a result of the comforting warmth.</li>
+                            </ul>
+                            
+                            <p class="text-gray-600 mb-4"><strong>What Makes a Heating Pad Better?</strong></p>
+                            <p class="text-gray-600 mb-4">A practical method of delivering targeted warmth to the lower back or abdomen is with heating pads. Among the options are:</p>
+                            <ul class="list-disc pl-5 mb-4 text-gray-600 space-y-1">
+                                <li><strong>Electric heating pads:</strong> Personalized and reliable warmth with programmable settings.</li>
+                                <li><strong>Microwaveable heating pads:</strong> Convenient and portable for immediate relief.</li>
+                                <li><strong>Infrared heating pads:</strong> Perfect for deep heat penetration to relieve stubborn cramps.</li>
+                            </ul>
+                            
+                            <p class="text-gray-600 mb-4"><strong>3. Additional Natural Treatments for Period Cramps</strong></p>
+                            <p class="text-gray-600 mb-4">Even while heating pads work wonders, the effects can be enhanced by combining them with other treatments:</p>
+                            <ul class="list-disc pl-5 mb-4 text-gray-600 space-y-1">
+                                <li><strong>Herbal Teas:</strong> The anti-inflammatory qualities of ginger and chamomile teas help to lessen cramping.</li>
+                                <li><strong>Gentle Exercise:</strong> Exercises that increase circulation and release endorphins include yoga and walking.</li>
+                                <li><strong>Foods High in Magnesium:</strong> You can reduce muscle tension by including foods like bananas, spinach, and nuts in your diet.</li>
+                                <li><strong>Hydration:</strong> Drinking enough water reduces bloating, which exacerbates cramping.</li>
+                            </ul>
+                            
+                            <p class="text-gray-600 mb-4"><strong>4. Lifestyle Advice for Menstrual Pain Management</strong></p>
+                            <ul class="list-disc pl-5 mb-4 text-gray-600 space-y-1">
+                                <li>To get ready for symptom management, keep track of your cycle.</li>
+                                <li>During your period, avoid salty foods and too much caffeine.</li>
+                                <li>To reduce stress, engage in relaxation exercises like deep breathing and meditation.</li>
+                            </ul>
+                            
+                            <p class="text-gray-600 mb-4"><strong>WHEN TO CONSULT A DOCTOR</strong></p>
+                            <p class="text-gray-600 mb-4">Although mild to moderate cramping is common, severe or ongoing pain may be a sign of more serious conditions such as fibroids or endometriosis. If your symptoms make it difficult for you to go about your everyday life, you should see a doctor.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>CONCLUSION:</strong> You don't have to let menstrual cramps rule your life. An easy and efficient natural pain relief method is heat therapy, particularly when using heating pads. It can make your monthly experience easier to handle when combined with other all-encompassing strategies.</p>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <button onclick="toggleReadMore(this)" class="read-more-btn text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read More →</button>
+                            <span class="text-gray-500 text-sm italic">by Dr Tuba Sultan</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Blog 2 -->
+                <!-- Blog 2 - Dry Needling -->
                 <div class="blog-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200">
                     <img src="https://eliteptla.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/sites/11/2022/10/Dry-Needling.jpeg.webp"
                         alt="Dry Needling" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">What Is Dry Needling and How Does It
-                            Work?</h3>
-                        <p class="text-gray-600 mb-4">A detailed guide to this powerful technique for releasing muscle
-                            knots, reducing chronic pain and improving mobility — explained by Dr. Sultan Zaidi.</p>
-                        <a href="#" class="text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read
-                            More →</a>
+                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">What Is Dry Needling and How Does It Work?</h3>
+                        
+                        <div class="preview-text">
+                            <p class="text-gray-600">Dry needling is a modern treatment technique used by physiotherapists to treat myofascial pain and muscle dysfunction...</p>
+                        </div>
+                        
+                        <div class="full-content hidden-content">
+                            <p class="text-gray-600 mb-4">Dry needling is a modern treatment technique used by physiotherapists to treat myofascial pain and muscle dysfunction. It involves inserting thin monofilament needles into trigger points (tight knots) in your muscles.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>How It Works:</strong> The needle insertion causes a local twitch response, which helps release the tight muscle band, increase blood flow, and reduce pain. This can provide immediate relief and improved range of motion.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Benefits of Dry Needling:</strong></p>
+                            <ul class="list-disc pl-5 mb-4 text-gray-600 space-y-1">
+                                <li>Reduces chronic and acute muscle pain</li>
+                                <li>Improves blood flow to affected areas</li>
+                                <li>Releases tight muscle knots and trigger points</li>
+                                <li>Restores normal muscle function</li>
+                                <li>Accelerates recovery from injuries</li>
+                            </ul>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Conditions Treated:</strong> Chronic neck and back pain, tension headaches and migraines, sports injuries, tennis elbow and golfer's elbow, shoulder impingement, jaw pain (TMJ), sciatica and piriformis syndrome.</p>
+                            
+                            <p class="text-gray-600 mb-4">When performed by a trained professional, dry needling is safe, effective, and often produces faster results than traditional stretching alone. Dr. Sultan Zaidi specializes in this advanced technique at Prisma Healthcare.</p>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <button onclick="toggleReadMore(this)" class="read-more-btn text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read More →</button>
+                            <span class="text-gray-500 text-sm italic">by Dr Tuba Sultan</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Blog 3 -->
+                <!-- Blog 3 - Dry Cupping -->
                 <div class="blog-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200">
                     <img src="https://static.wixstatic.com/media/6f406b_da04d776d3a940bf808c7a69ca511d69~mv2.jpg/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6f406b_da04d776d3a940bf808c7a69ca511d69~mv2.jpg"
                         alt="Cupping Therapy" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">Benefits of Dry Cupping for Muscle
-                            Recovery</h3>
-                        <p class="text-gray-600 mb-4">Learn how static and dynamic cupping improves blood flow, reduces
-                            inflammation, relieves tightness and speeds up recovery after workouts or injury.</p>
-                        <a href="#" class="text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read
-                            More →</a>
+                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">Benefits of Dry Cupping for Muscle Recovery</h3>
+                        
+                        <div class="preview-text">
+                            <p class="text-gray-600">Learn how static and dynamic cupping improves blood flow, reduces inflammation, relieves tightness and speeds up recovery...</p>
+                        </div>
+                        
+                        <div class="full-content hidden-content">
+                            <p class="text-gray-600 mb-4">Cupping therapy is an ancient healing technique that has gained modern recognition for its powerful effects on muscle recovery and pain management. At Prisma Healthcare, we offer both static and dynamic cupping treatments.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Static Cupping:</strong> Cups are placed on specific areas and left for 5-15 minutes. This creates suction that draws blood to the surface, promoting healing and reducing muscle tension.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Dynamic Cupping:</strong> Also known as "gliding cupping," this technique involves moving the cups across the skin with oil, providing a deep tissue massage effect that releases fascial adhesions.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Key Benefits:</strong></p>
+                            <ul class="list-disc pl-5 mb-4 text-gray-600 space-y-1">
+                                <li>Increases blood circulation to injured tissues</li>
+                                <li>Reduces inflammation and muscle soreness</li>
+                                <li>Breaks down scar tissue and adhesions</li>
+                                <li>Activates the lymphatic system for detoxification</li>
+                                <li>Provides deep relaxation and stress relief</li>
+                                <li>Improves range of motion and flexibility</li>
+                            </ul>
+                            
+                            <p class="text-gray-600 mb-4">Many athletes incorporate cupping into their recovery routine to speed up healing and prevent injuries. Consult with our experts to see if cupping therapy is right for you.</p>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <button onclick="toggleReadMore(this)" class="read-more-btn text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read More →</button>
+                            <span class="text-gray-500 text-sm italic">by Dr Tuba Sultan</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Blog 4 -->
+                <!-- Blog 4 - Sports Injury Recovery -->
                 <div class="blog-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200">
                     <img src="https://primespt.com/wp-content/uploads/2025/09/athletic-injury-scaled.png"
                         alt="Sports Injury" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">Top 5 Mistakes Athletes Make During
-                            Injury Recovery</h3>
-                        <p class="text-gray-600 mb-4">Avoid these common errors that delay healing — plus expert rehab
-                            tips from sports physiotherapy specialist Dr. Sultan Zaidi.</p>
-                        <a href="#" class="text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read
-                            More →</a>
+                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">Top 5 Mistakes Athletes Make During Injury Recovery</h3>
+                        
+                        <div class="preview-text">
+                            <p class="text-gray-600">Avoid these common errors that delay healing — plus expert rehab tips from sports physiotherapy specialist...</p>
+                        </div>
+                        
+                        <div class="full-content hidden-content">
+                            <p class="text-gray-600 mb-4"><strong>Mistake #1: Returning to Sport Too Early</strong><br>Many athletes rush back before complete healing, leading to re-injury and chronic problems. Always get clearance from your physiotherapist before returning to play.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Mistake #2: Skipping Rehabilitation Exercises</strong><br>Home exercises are crucial for rebuilding strength and stability. Skipping them delays recovery and significantly increases re-injury risk.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Mistake #3: Ignoring Pain Signals</strong><br>"No pain, no gain" does NOT apply during injury recovery. Sharp pain means stop immediately; pushing through can cause serious damage.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Mistake #4: Neglecting Nutrition and Sleep</strong><br>Healing requires adequate protein, vitamins, and quality sleep. Poor nutrition slows tissue repair significantly and prolongs recovery time.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Mistake #5: Only Treating the Symptom, Not the Cause</strong><br>Effective rehab addresses biomechanical issues that caused the injury, not just the pain site. A comprehensive assessment is essential.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Expert Recovery Tips:</strong> Follow your prescribed rehab plan consistently, communicate openly with your therapist, be patient with the process, and focus on proper warm-up and cool-down routines to prevent future injuries.</p>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <button onclick="toggleReadMore(this)" class="read-more-btn text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read More →</button>
+                            <span class="text-gray-500 text-sm italic">by Dr Tuba Sultan</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Blog 5 -->
+                <!-- Blog 5 - Posture Correction -->
                 <div class="blog-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200">
                     <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/08/6517-Every_Woman_Guide_to_Better_Posture_in_30_Days-1296x728-body-image-17.jpg?h=1890"
                         alt="Posture" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">Fix Your Posture in 30 Days – Simple
-                            Daily Routine</h3>
-                        <p class="text-gray-600 mb-4">Step-by-step exercises, stretches and ergonomic tips to correct
-                            forward head posture, rounded shoulders and lower back strain.</p>
-                        <a href="#" class="text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read
-                            More →</a>
+                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">Fix Your Posture in 30 Days – Simple Daily Routine</h3>
+                        
+                        <div class="preview-text">
+                            <p class="text-gray-600">Step-by-step exercises, stretches and ergonomic tips to correct forward head posture, rounded shoulders and lower back strain...</p>
+                        </div>
+                        
+                        <div class="full-content hidden-content">
+                            <p class="text-gray-600 mb-4"><strong>Week 1: Awareness & Setup</strong><br>- Take photos of your posture from all angles to track progress<br>- Adjust your workstation: eyes level with screen, feet flat on floor<br>- Set hourly reminders to check and correct your posture</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Week 2: Daily Stretches</strong><br>- Chin tucks: 10 reps, 3x daily (for forward head posture)<br>- Doorway pec stretch: 30 seconds, 3x daily (for rounded shoulders)<br>- Cat-cow stretch: 10 reps, 2x daily (for spine mobility)</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Week 3: Strengthening Exercises</strong><br>- Wall angels: 10 reps, 2x daily<br>- Prone Y raises: 10 reps, 2x daily<br>- Glute bridges: 15 reps, 2x daily<br>- Scapular retractions: 15 reps, 2x daily</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Week 4: Integration</strong><br>- Maintain all exercises from previous weeks<br>- Practice good posture during walking, sitting, and standing<br>- Use posture reminders and apps on your phone</p>
+                            
+                            <p class="text-gray-600 mb-4">Consistency is key — stick with the routine for 30 days and you'll notice significant improvements in how you look, feel, and move. Better posture reduces neck pain, back pain, and headaches while improving breathing and confidence.</p>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <button onclick="toggleReadMore(this)" class="read-more-btn text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read More →</button>
+                            <span class="text-gray-500 text-sm italic">by Dr Tuba Sultan</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Blog 6 -->
+                <!-- Blog 6 - Knee Pain Exercises -->
                 <div class="blog-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200">
                     <img src="https://www.northeastspineandsports.com/wp-content/uploads/2022/05/person-exercises-at-home-while-watching-video-tutorial-1024x576.jpg"
                         alt="Home Exercises" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">Best Home Exercises for Knee Pain
-                            Relief</h3>
-                        <p class="text-gray-600 mb-4">Safe, effective strengthening and mobility exercises you can do at
-                            home — recommended by our knee rehab specialists.</p>
-                        <a href="#" class="text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read
-                            More →</a>
+                        <h3 class="text-2xl font-bold text-[var(--purple)] mb-3">Best Home Exercises for Knee Pain Relief</h3>
+                        
+                        <div class="preview-text">
+                            <p class="text-gray-600">Safe, effective strengthening and mobility exercises you can do at home — recommended by our knee rehab specialists...</p>
+                        </div>
+                        
+                        <div class="full-content hidden-content">
+                            <p class="text-gray-600 mb-4"><strong>1. Straight Leg Raises</strong><br>Lie on your back with one knee bent and the other leg straight. Lift the straight leg to the height of the bent knee. Hold 3-5 seconds. Do 10-15 reps, 2-3 times daily.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>2. Seated Knee Extensions</strong><br>Sit on a chair with good posture. Slowly straighten your knee until your leg is parallel to the floor. Hold 5 seconds. Do 10-15 reps, 2 times daily.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>3. Wall Sits (Beginner to Advanced)</strong><br>Lean against a wall and slide down until knees are bent at 45-90 degrees. Hold 15-30 seconds. Do 5-10 reps.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>4. Heel and Calf Stretches</strong><br>Stand facing a wall with hands on the wall. Step one foot back, keeping heel down. Hold 30 seconds. Repeat 3 times on each leg.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>5. Clamshells</strong><br>Lie on your side with knees bent. Keep feet together and lift your top knee. Do 10-15 reps, 2 times daily on each side.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>6. Mini Squats</strong><br>Stand with feet shoulder-width apart. Slowly lower into a shallow squat (as if sitting back). Do 10-15 reps, 2 times daily.</p>
+                            
+                            <p class="text-gray-600 mb-4"><strong>Important:</strong> Stop immediately if you feel sharp pain. Start slowly and increase intensity gradually. Always warm up for 5 minutes before exercises. Consult your physiotherapist before starting any new exercise program, especially if you have a known injury or condition.</p>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <button onclick="toggleReadMore(this)" class="read-more-btn text-[var(--blue)] font-semibold hover:text-[var(--purple)] transition">Read More →</button>
+                            <span class="text-gray-500 text-sm italic">by Dr Tuba Sultan</span>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Pagination / Load More (optional) -->
             <div class="text-center mt-16">
-                <button
-                    class="bg-gradient-to-r from-[var(--purple)] to-[var(--blue)] text-white px-12 py-5 rounded-full text-lg font-bold shadow-xl hover:shadow-2xl transition">Load
-                    More Articles</button>
+                <button class="bg-gradient-to-r from-[var(--purple)] to-[var(--blue)] text-white px-12 py-5 rounded-full text-lg font-bold shadow-xl hover:shadow-2xl transition">Load More Articles</button>
             </div>
         </div>
     </section>
 
- <footer class="bg-gray-900 text-white pt-16 pb-8">
-    <div class="max-w-7xl mx-auto px-6 sm:px-8">
-
-        <!-- Top Row -->
-        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-12 md:gap-6">
-
-            <!-- LEFT: Logo + Tagline -->
-            <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-xs mx-auto md:mx-0">
-                <a href="home.html">
-                    <img src="./img/logo pic (2).jpg" alt="Physio Prisma Logo"
-                         class="h-16 w-16 rounded-full object-cover border-2 border-purple-400 mb-4">
-                </a>
-                <p class="text-lg font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
-                    Prisma Healthcare
-                </p>
-                <p class="text-gray-400 text-sm leading-relaxed">Expert physiotherapy for lasting pain relief and better mobility.</p>
-                <p class="text-gray-400 text-sm mt-2 leading-relaxed">Book your appointment and start your pain-free journey.</p>
-            </div>
-
-            <!-- CENTER: Explore Links -->
-            <div class="flex flex-col items-center text-center">
-                <h4 class="font-bold text-base uppercase tracking-widest text-white mb-5">Explore</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-                    <li><a href="shop.html" class="hover:text-white transition">Shop</a></li>
-                    <li>
-                        <button onclick="toggleClinicDropdown()"
-                            class="flex items-center gap-2 hover:text-white transition focus:outline-none mx-auto">
-                            Our Clinic
-                            <i id="clinic-arrow" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-                        </button>
-                        <div id="clinic-dropdown" class="hidden mt-2 space-y-2 text-xs text-gray-500">
-                            <a href="clinic.html" class="block py-1 hover:text-white transition">Dr. Sultan Zaidi Physiotherapy Center</a>
-                            <a href="#" class="block py-1 hover:text-white transition">Prisma Healthcare Clinic</a>
-                        </div>
-                        
-                    </li>
-                    <li><a href="courses.html" class="hover:text-white transition">Prisma Healthcare Academy</a></li>
-                    <li><a href="blog.html" class="hover:text-white transition">Blogs</a></li>
-                    <li><a href="gallery.html" class="hover:text-white transition">Gallery</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- RIGHT: Social + CTA -->
-            <div class="flex flex-col items-center md:items-end text-center md:text-right max-w-xs mx-auto md:mx-0">
-                <h4 class="font-bold text-base uppercase tracking-widest text-white mb-5">Follow Us</h4>
-                <div class="flex gap-4 text-2xl mb-6">
-                    <a href="https://wa.link/lcqilt" target="_blank" rel="noopener noreferrer"
-                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-500 transition" aria-label="WhatsApp">
-                        <i class="fa-brands fa-whatsapp"></i>
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-12 md:gap-6">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-xs mx-auto md:mx-0">
+                    <a href="home.html">
+                        <img src="./img/logo pic (2).jpg" alt="Physio Prisma Logo"
+                            class="h-16 w-16 rounded-full object-cover border-2 border-purple-400 mb-4">
                     </a>
-                    <a href="https://www.instagram.com/physio_prisma?igsh=bG8wbm41aHNrbnly" target="_blank"
-                        rel="noopener noreferrer"
-                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-500 transition" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/PhysioPrisma?mibextid=wwXIfr" target="_blank"
-                        rel="noopener noreferrer"
-                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/prismahealthcare/about/" target="_blank"
-                        rel="noopener noreferrer"
-                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
+                    <p class="text-lg font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">Prisma Healthcare</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Expert physiotherapy for lasting pain relief and better mobility.</p>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">Book your appointment and start your pain-free journey.</p>
                 </div>
-                <p class="text-sm text-gray-400 mb-3">Have questions? We're here for you.</p>
-                <a href="contact.html"
-                    class="inline-block bg-gradient-to-r from-[var(--purple)] to-[var(--blue)] text-white px-7 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition text-sm">
-                    Get In Touch
-                </a>
+
+                <div class="flex flex-col items-center text-center">
+                    <h4 class="font-bold text-base uppercase tracking-widest text-white mb-5">Explore</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="shop.html" class="hover:text-white transition">Shop</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition">Blogs</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center md:items-end text-center md:text-right max-w-xs mx-auto md:mx-0">
+                    <h4 class="font-bold text-base uppercase tracking-widest text-white mb-5">Follow Us</h4>
+                    <div class="flex gap-4 text-2xl mb-6">
+                        <a href="https://wa.link/lcqilt" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-500 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/physio_prisma" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-500 transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/PhysioPrisma" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/prismahealthcare" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-3">Have questions? We're here for you.</p>
+                    <a href="contact.html" class="inline-block bg-gradient-to-r from-[var(--purple)] to-[var(--blue)] text-white px-7 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition text-sm">Get In Touch</a>
+                </div>
             </div>
-
         </div>
-    </div>
+        <div class="border-t border-gray-800 mt-14 pt-6">
+            <p class="text-center text-gray-500 text-sm">© 2026 Physio Prisma. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <!-- Bottom Bar -->
-    <div class="border-t border-gray-800 mt-14 pt-6">
-        <p class="text-center text-gray-500 text-sm">© 2026 Physio Prisma. All rights reserved.</p>
-    </div>
-</footer>
-    <!-- Mobile Menu Script -->
     <script>
         // Mobile menu toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
@@ -396,90 +448,33 @@
 
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
-            // Optional: change icon to X when open
             menuBtn.querySelector('i').classList.toggle('fa-bars');
             menuBtn.querySelector('i').classList.toggle('fa-times');
         });
-        // Smooth Hero Slider Logic
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-slide');
 
-        function showSlide(n) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            slides[n].classList.add('active');
-            currentSlide = n;
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        // Auto slide every 6 seconds
-        setInterval(nextSlide, 4000);
-
-        // Initialize
-        showSlide(0);
-    </script>
-    <script>
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     const servicesBtn = document.getElementById('mobile-services-btn');
-        //     const servicesDropdown = document.getElementById('mobile-services-dropdown');
-        //     const chevron = document.getElementById('mobile-chevron');
-
-        //     if (servicesBtn && servicesDropdown && chevron) {
-        //         servicesBtn.addEventListener('click', function(e) {
-        //             e.stopPropagation(); // Prevent any parent clicks from interfering
-
-        //             // Toggle the dropdown visibility
-        //             servicesDropdown.classList.toggle('hidden');
-
-        //             // Rotate the chevron (smooth animation)
-        //             if (servicesDropdown.classList.contains('hidden')) {
-        //                 chevron.style.transform = 'rotate(0deg)';
-        //             } else {
-        //                 chevron.style.transform = 'rotate(180deg)';
-        //             }
-        //         });
-        //     }
-        // });
-
-        // Mobile Clinic Dropdown
-        const clinicBtn = document.getElementById('mobile-clinic-btn');
-        const clinicDropdown = document.getElementById('mobile-clinic-dropdown');
-        const chevron = document.getElementById('mobile-chevron');
-
-        clinicBtn.addEventListener('click', () => {
-            clinicDropdown.classList.toggle('hidden');
-            chevron.classList.toggle('rotate-180');
-        });
-        // Clinic Dropdown Toggle
-        function toggleClinicDropdown() {
-            const dropdown = document.getElementById('clinic-dropdown');
-            dropdown.classList.toggle('hidden');
-        }
-
-        // Optional: Close dropdown when clicking outside
-        document.addEventListener('click', function (e) {
-            const dropdown = document.getElementById('clinic-dropdown');
-            const button = e.target.closest('button');
-
-            if (!button && !dropdown.classList.contains('hidden')) {
-                dropdown.classList.add('hidden');
+        // Toggle Read More / Read Less for blog posts
+        function toggleReadMore(btn) {
+            const blogCard = btn.closest('.blog-card');
+            const previewText = blogCard.querySelector('.preview-text');
+            const fullContent = blogCard.querySelector('.full-content');
+            
+            if (fullContent.classList.contains('hidden-content')) {
+                fullContent.classList.remove('hidden-content');
+                btn.textContent = 'Read Less ←';
+                previewText.classList.add('hidden-content');
+            } else {
+                fullContent.classList.add('hidden-content');
+                btn.textContent = 'Read More →';
+                previewText.classList.remove('hidden-content');
             }
-        });
+        }
     </script>
 
     <!-- Fixed WhatsApp Floating Button -->
     <a href="https://wa.link/lcqilt" target="_blank"
         class="fixed bottom-6 right-6 z-[100] flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group">
-
-        <!-- WhatsApp Icon -->
         <i class="fa-brands fa-whatsapp text-3xl md:text-4xl"></i>
-
-        <!-- Optional Tooltip -->
-        <span
-            class="absolute -top-10 right-0 bg-gradient-to-r from-[var(--purple)] to-[var(--blue)] text-white text-xs px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
+        <span class="absolute -top-10 right-0 bg-gradient-to-r from-[var(--purple)] to-[var(--blue)] text-white text-xs px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
             Chat on WhatsApp
         </span>
     </a>
